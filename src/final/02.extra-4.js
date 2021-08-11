@@ -30,6 +30,7 @@ function useLocalStorageState(
   // Check the example at src/examples/local-state-key-change.js to visualize a key change
   React.useEffect(() => {
     const prevKey = prevKeyRef.current
+    console.log(prevKeyRef.current)
     if (prevKey !== key) {
       window.localStorage.removeItem(prevKey)
     }
